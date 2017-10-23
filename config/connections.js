@@ -34,10 +34,17 @@ module.exports.connections = {
 
   devPostgres: {
     adapter: 'sails-postgresql',
-    host: '127.0.0.1',
+    host: 'localhost',
     // user: 'root', // optional
     // password: 'YOUR_POSTGRES_PASSWORD', // optional
     database: 'sails_todo_dev' //optional
+  },
+
+  sailsMongoDBServer: {
+    adapter: 'sails-mongo',
+    host: 'localhost',
+    port: 27017,
+    database: 'demoSailsDB'
   }
 
   /***************************************************************************
